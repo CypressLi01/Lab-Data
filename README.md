@@ -1,11 +1,10 @@
 # Reviewer: 9eC6
 ## [W3 & Q3]: DoG mask computation overhead and its impact on the training FPS
 As shown in the figure below, we present the GPU usage of the DoG module throughout the entire training process for a single view.
-As shown in the table, we also report the impact of the DoG mask on training FPS.
 
 <img width="557" height="419" alt="image" src="https://github.com/user-attachments/assets/f7e3b88b-ce04-4b5f-bf93-671023825291" />
 
-
+As shown in the table, we also report the impact of the DoG mask on training FPS.
 | Variant                   | PSNR  | Mem(G) | FPS    |
 |---------------------------|-------|--------|--------|
 | w/o Freq-Guided Objective | 22.15 | 10.92  | 107.23 |
@@ -14,7 +13,7 @@ As shown in the table, we also report the impact of the DoG mask on training FPS
 
 # Reviewer:  Lt69
 ## [Q4]: Total number of iterations
-In practice, as shown in the table below, once 3DGS reaches convergence, its performance no longer improves significantly with additional iterations. Therefore, we set 100,000 iterations to ensure the stability of the multi-stage optimization, rather than to improve the final rendering quality.
+Performance of 3DGS and Ours under Different Training Iterations
 
 | Method   | iters   | SSIM  | PSNR  | LPIPS |
 |----------|---------|-------|-------|-------|
@@ -25,7 +24,7 @@ In practice, as shown in the table below, once 3DGS reaches convergence, its per
 
 
 ## [Q5]: Baseline
-as shown in the table below, we observe that the performance of CityGS-X is highly sensitive to training configurations, including the number of GPUs and batch size.
+Performance Sensitivity of CityGS-X to Batch Size and GPU Number
 
 | Batch/GPU | SSIM  | PSNR  | LPIPS |
 |-----------|-------|-------|-------|
@@ -37,7 +36,7 @@ as shown in the table below, we observe that the performance of CityGS-X is high
 
 ## [W1 & Q3 & Q4]:Supplementary Discussion on Mip-Splatting and Multi-Resolution Training Inputs
 
-As shown in the following table, Mip-Splatting produces significantly larger models and more Gaussian points, and requires GPU memory of more than 40GB–60GB for training, yet yields limited rendering quality.
+Model Size, Memory Cost and Rendering Quality Comparison between Mip-Splatting and Ours
 
 
 | Scene      | Method         | GS (M) ↓ | Size (GB) ↓ | Mem (GB) ↓ | PSNR ↑ | SSIM ↑ | LPIPS ↓ |
