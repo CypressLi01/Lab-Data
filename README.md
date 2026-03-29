@@ -3,7 +3,8 @@
 As shown in the figure below, we present the GPU usage of the DoG module throughout the entire training process for a single view.
 As shown in the table, we also report the impact of the DoG mask on training FPS.
 
-![GPU Usage](GPU%20usage%20of%20the%20DoG%20mask%20for%20a%20single%20view.png)
+<img width="557" height="419" alt="image" src="https://github.com/user-attachments/assets/f7e3b88b-ce04-4b5f-bf93-671023825291" />
+
 
 | Variant                   | PSNR  | Mem(G) | FPS    |
 |---------------------------|-------|--------|--------|
