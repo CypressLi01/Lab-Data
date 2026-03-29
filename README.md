@@ -17,7 +17,7 @@ Performance of 3DGS and Ours under Different Training Iterations
 
 | Method   | iters   | SSIM  | PSNR  | LPIPS |
 |----------|---------|-------|-------|-------|
-| 3DGS     | 30000   | 0.791 | 24.13 | 0.262 |
+| 3DGS     | 30000   | 0.791 | 24.16 | 0.262 |
 |      | 100000  | 0.793 | 24.13 | 0.258 |
 | Ours     | 100000  | 0.815 | 22.62 | 0.208 |
 |     | 200000  | 0.815 | 22.63 | 0.207 |
